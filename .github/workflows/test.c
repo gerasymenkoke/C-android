@@ -9,9 +9,9 @@
 // #include <GLES3/gl3.h>
 // #include <asset_manager.h>
 // #include <asset_manager_jni.h>
-#include <android_native_app_glue.h>
-#include <android/sensor.h>
-#include "CNFGAndroid.h"
+// #include <android_native_app_glue.h>
+// #include <android/sensor.h>
+// #include "CNFGAndroid.h"
 
 #define CNFG_IMPLEMENTATION
 #define CNFG3D
