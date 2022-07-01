@@ -30,7 +30,7 @@ jobs:
            pwd 
            ls -l
            chmod +x test
-           ./sum_of_two  1 2
+           ./test  1 2
            
            
 
