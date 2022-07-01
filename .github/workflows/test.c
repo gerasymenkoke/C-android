@@ -13,14 +13,14 @@
 // #include <android/sensor.h>
 // #include "CNFGAndroid.h"
 
-#define CNFG_IMPLEMENTATION
-#define CNFG3D
+// #define CNFG_IMPLEMENTATION
+// #define CNFG3D
 
-#include "CNFG.h"
+// #include "CNFG.h"
 
 
-#include <stdio.h>
-#include<stdlib.h>
+
+
 
 int main(int quantity, char  **number) {    
 
