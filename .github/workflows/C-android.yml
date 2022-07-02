@@ -38,9 +38,10 @@ jobs:
           channel: 'beta'
       - name: build apk
         run: |
-           pwd
-           ls -l
+           # pwd
+           # ls -l
            flutter pub get
+           working-directory: /home/runner/work/C-android/C-android/.github/workflows
            flutter format --set-exit-if-changed .
            flutter analyze .
            flutter build apk
