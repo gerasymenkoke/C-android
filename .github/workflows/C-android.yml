@@ -40,8 +40,9 @@ jobs:
         run: |
            # pwd
            # ls -l
+           flutter create my_project
+           cd my_project
            flutter pub get
-           working-directory: /home/runner/work/C-android/C-android/.github/workflows
            flutter format --set-exit-if-changed .
            flutter analyze .
            flutter build apk
