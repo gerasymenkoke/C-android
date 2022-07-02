@@ -31,12 +31,11 @@ jobs:
            ls -l
            chmod +x test
            ./test  1 2
-           
-      - name: build apk
-      
-        uses: subosito/flutter-action@v1
+         
+      - uses: subosito/flutter-action@v1
         with:
           channel: 'beta'
+      - name: build apk
         run: |
            flutter pub get
            flutter format --set-exit-if-changed .
