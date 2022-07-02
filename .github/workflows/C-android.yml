@@ -37,6 +37,8 @@ jobs:
           channel: 'beta'
       - name: build apk
         run: |
+           pwd
+           ls -l
            flutter pub get
            flutter format --set-exit-if-changed .
            flutter analyze .
