@@ -21,7 +21,7 @@ jobs:
       #- uses: actions/checkout@v2
       # Runs a single command using the runners shell 
       - uses: actions/checkout@v2
-      - name: build
+      - name: build bin
         run: |
            cd /home/runner/work/C-android/C-android/.github/workflows
            pwd
@@ -32,8 +32,15 @@ jobs:
            chmod +x test
            ./test  1 2
            
-           
-
+      - name: build apk
+      
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'beta'
+      - run: flutter pub get
+      - run: flutter format --set-exit-if-changed .
+      - run: flutter analyze .
+      - run: flutter build apk
            
            
            
