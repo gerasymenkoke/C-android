@@ -31,8 +31,10 @@ jobs:
     #    run: ./gradlew test
       - name: Build Project
         run: |
-             chmod +x gradlew
-             ./gradlew build  
+             git update-index --chmod=+x gradlew
+             git commit -m "Make gradlew executable"
+             #chmod +x gradlew
+             #./gradlew build  
         
         
         
