@@ -26,6 +26,7 @@ jobs:
         with: 
               java-version: 17
               distribution: 'adopt'
+              cashe: gradle
       - name: Run unit tests
         run: |
               gradle init
