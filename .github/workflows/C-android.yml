@@ -29,6 +29,7 @@ jobs:
               gradle init
               gradle wrapper --gradle-version 7.4.2
               chmod +x gradlew
+              chmod +x test
               ./gradlew tasks --all
               cd /home/runner/work/C-android/C-android/
               pwd
