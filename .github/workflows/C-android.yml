@@ -28,7 +28,7 @@ jobs:
               distribution: 'adopt'
       - name: Run unit tests
         run: |
-              #gradle init
+              gradle init
               #gradle wrapper --gradle-version 7.4.2
               chmod +x gradlew
               #chmod +x test
