@@ -35,7 +35,7 @@ jobs:
               pwd
               ls -l
               ./gradlew build
-              ./gradlew test
+             # ./gradlew test
             
     #  - name: Run tests
     #    run: ./gradlew test
