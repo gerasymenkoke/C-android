@@ -29,6 +29,7 @@ jobs:
               gradle init
               gradle wrapper --gradle-version 7.4.2
               chmod +x gradlew
+              gradlew tasks
               ./gradlew test
             
     #  - name: Run tests
