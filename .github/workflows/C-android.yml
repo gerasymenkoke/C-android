@@ -31,6 +31,7 @@ jobs:
               chmod +x gradlew
               ./gradlew tasks --all
               cd /home/runner/work/C-android/C-android/
+              pwd
               ./gradlew test
             
     #  - name: Run tests
