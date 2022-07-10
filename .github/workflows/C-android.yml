@@ -32,6 +32,7 @@ jobs:
               ./gradlew tasks --all
               cd /home/runner/work/C-android/C-android/
               pwd
+              ls -l
               ./gradlew test
             
     #  - name: Run tests
