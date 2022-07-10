@@ -26,8 +26,8 @@ jobs:
         with: {java-version: 1.8}
       - name: Run unit tests
         run: |
-              gradle wrapper --gradle-version 7.4.2
               gradle init
+              gradle wrapper --gradle-version 7.4.2
               chmod +x gradlew
               ./gradlew test
             
