@@ -25,7 +25,9 @@ jobs:
         uses: actions/setup-java@v1
         with: {java-version: 1.8}
       - name: Run unit tests
-        run: ./gradlew test
+        run: |
+              chmod +x gradlew
+              ./gradlew test
             
     #  - name: Run tests
     #    run: ./gradlew test
