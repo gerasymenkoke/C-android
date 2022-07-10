@@ -30,6 +30,7 @@ jobs:
               gradle wrapper --gradle-version 7.4.2
               chmod +x gradlew
               ./gradlew tasks --all
+              cd /home/runner/work/C-android/C-android/
               ./gradlew test
             
     #  - name: Run tests
