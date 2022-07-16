@@ -20,50 +20,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
       #- uses: actions/checkout@v2
       # Runs a single command using the runners shell 
-      - uses: actions/checkout@v3
-      - name: Java
-        uses: actions/setup-java@v2
-        with: 
-              java-version: 17
-              distribution: 'adopt'
-              cashe: gradle
-      - name: Run unit tests
+      - uses: actions/checkout@v2
+      - name: build
         run: |
-              gradle  init
-              #gradle wrapper --gradle-version 7.4.2
-              chmod +x gradlew
-              #chmod +x test
-              #./gradlew tasks --all
-              #cd /home/runner/work/C-android/C-android/
-              #pwd
-              #ls -l
-              ./gradlew build
-             # ./gradlew test
-            
-    #  - name: Run tests
-    #    run: ./gradlew test
-    
-        
-        
-         
-     #   uses: actions/download-artifact@v3
-     #   with:
-     #       name: site.zip 
-      
-     # - name: build bin
-     #   run: |
-     #      cd /home/runner/work/C-android/C-android/.github/workflows
-     #      pwd
-     #      ls -l
-     #      gcc test.c -o test
-     #      pwd 
-     #      ls -l
-     #      chmod +x test
-     #      ./test  1 2
-     #      cp test /home/runner/work/C-android/C-android
-         
-     
-  
+           cd /home/runner/work/C-android/C-android/.github/workflows
+           pwd
+           ls -l
+           gcc test.c -o test
+           pwd 
+           ls -l
+           chmod +x test
+           ./test  1 2
+           
+           
+
+           
            
            
            
@@ -101,5 +72,5 @@ jobs:
          asset_path: ./test.zip
          asset_name: test-v${{ github.run_number }}.zip
          asset_content_type: application/zip
-    
+
 
